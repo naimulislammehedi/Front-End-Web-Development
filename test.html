@@ -6,80 +6,50 @@
     <title>The Role of AI in Modern Cybersecurity</title>
 </head>
 <body>
+ <p>What are your interests?</p>
+  <input type="checkbox" id="interestTech" name="interests" value="technology">
+  <label for="interestTech">Technology</label>
 
-    <!-- Page Header: Contains logo and main navigation -->
-    <header>
-        <h1>CyberSec Insights</h1>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/articles">Articles</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <input type="checkbox" id="interestArt" name="interests" value="art">
+  <label for="interestArt">Art</label>
 
-    <!-- Main Content: Unique content of this page -->
-    <main>
-        <!-- The primary content is a single article -->
-        <article>
-            <!-- Article Header: Contains title and publication info -->
-            <header>
-                <h2>The Role of AI in Modern Cybersecurity</h2>
-                <p>Published on: <time datetime="2025-08-27">August 27, 2025</time> by Jane Doe</p>
-            </header>
+  <input type="checkbox" id="interestMusic" name="interests" value="music">
+  <label for="interestMusic">Music</label>
 
-            <!-- Section 1: Introduction -->
-            <section>
-                <h3>Introduction: The New Frontier of Defense</h3>
-                <p>Artificial Intelligence (AI) is no longer a futuristic concept; it is actively reshaping the landscape of digital defense...</p>
-            </section>
 
-            <!-- Section 2: AI in Threat Detection -->
-            <section>
-                <h3>AI-Powered Threat Detection</h3>
-                <p>One of the most significant applications of AI in cybersecurity is in threat detection. Machine learning algorithms can analyze vast amounts of data to identify patterns and anomalies that might indicate a threat.</p>
-                
-                <!-- Figure with a diagram and a caption -->
-                <figure>
-                    <img src="https://placehold.co/600x300/f0f2f5/333?text=AI+Threat+Analysis+Diagram" alt="Diagram showing AI analyzing data streams to detect threats.">
-                    <figcaption>Fig 1. AI models processing network traffic to identify malicious patterns.</figcaption>
-                </figure>
-            </section>
 
-            <!-- Section 3: A Quote from an expert -->
-            <section>
-                <h3>Expert Opinion</h3>
-                <p>As experts in the field note, the speed of modern attacks necessitates an automated response.</p>
-                
-                <!-- A blockquote from another source -->
-                <blockquote cite="https://www.security-journal.com/expert-opinions">
-                    <p>"Human analysts cannot keep pace with the volume and velocity of cyber threats. AI provides the necessary scale and speed to mount an effective defense."</p>
-                </blockquote>
-            </section>
-            
-            <!-- Article Footer: Contains tags or author info -->
-            <footer>
-                <p>Tags: #AI, #CyberSecurity, #MachineLearning</p>
-            </footer>
-        </article>
 
-        <!-- Aside: Tangentially related content, like links to other articles -->
-        <aside>
-            <h3>Related Articles</h3>
-            <ul>
-                <li><a href="#">Understanding Phishing Attacks</a></li>
-                <li><a href="#">The Basics of Network Security</a></li>
-                <li><a href="#">Careers in Cybersecurity</a></li>
-            </ul>
-        </aside>
-    </main>
 
-    <!-- Page Footer: Contains copyright and contact info for the whole site -->
-    <footer>
-        <p>© 2025 CyberSec Insights. All rights reserved.</p>
-        <p><a href="/contact">Contact Us</a></p>
-    </footer>
+
+<label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="">--Please choose an option--</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+    <option value="uk">United Kingdom</option>
+  </select>
+
+
+  <label for="bio">Biography:</label><br>
+  <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Tell us about yourself..."></textarea>
+
+  <button type="submit">Submit Data</button>
+  <button type="reset">Clear Form</button>
+
+
+  <label for="zipcode">Zip Code (5 digits):</label>
+  <input 
+    type="text" 
+    id="zipcode" 
+    name="zipcode" 
+    required 
+    minlength="5" 
+    maxlength="5" 
+    pattern="[0-9]{5}"
+    title="Please enter a 5-digit zip code.">
+  <button type="submit">Validate & Submit</button>
+
+</form>
 
 </body>
 </html>

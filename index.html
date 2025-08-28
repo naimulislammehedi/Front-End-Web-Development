@@ -4,85 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML</title>
+
+    <style>
+      table.styled-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .styled-table th,
+      .styled-table td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .styled-table th {
+        background-color: #f2f2f2;
+      }
+
+      .styled-table caption {
+        caption-side: bottom;
+        padding-top: 10px;
+        font-style: italic;
+      }
+    </style>
+    
   </head>
+
   <body>
-    <form action="#" method="POST">
-      <label for="username">Username:</label>
-      <input
-        type="text"
-        name="username"
-        id="username"
-        placeholder="e.g., john_doe"
-      />
-
-      <br />
-      <br />
-
-      <label for="userPassword">Password:</label>
-      <input type="password" name="userPassword" id="userPassword" />
-
-      <p>Choose your plan:</p>
-      <input
-        type="radio"
-        id="planFree"
-        name="membership_plan"
-        value="free"
-        checked
-      />
-      <label for="planFree">Free</label>
-
-      <input
-        type="radio"
-        name="membership_plan"
-        id="planPremium"
-        value="premium"
-      />
-      <label for="planPremium">Premium</label>
-
-      <p>What are your interests?</p>
-      <input
-        type="checkbox"
-        name="interests"
-        id="interestTech"
-        value="technology"
-      />
-      <label for="interestTech">Technology</label>
-
-      <input type="checkbox" name="interests" id="interestArt" value="art" />
-      <label for="interestArt">Art</label>
-
-      <input type="checkbox" name="interests" id="interestMusic" />
-      <label for="interestMusic">Music</label>
-
-      <label for="country">Country:</label>
-      <select name="country" id="country">
-        <option value="">--Please choose an option--</option>
-        <option value="us">United States</option>
-        <option value="ca">Canada</option>
-        <option value="uk">United Kingdom</option>
-      </select>
-
-
-      <label for="bio">Biography:</label><br>
-      <textarea name="bio" id="bio" rows="5" cols="40" placeholder="Tell us about yourself..."></textarea>
-
-      <button type="submit">Submit Data</button>
-      <button type="reset">Clear Form</button>
-
-
-      <label for="zipcode">Zip Code (5 digits):</label>
-      <input 
-      type="text" 
-      id="zipcode"
-      name="zipcode"
-      required
-      minlength="5"
-      maxlength="5"
-      pattern="[0-9]{5}"
-      title="Please enter a 5-digit zip code."
-      >
-      <button type="submit">Validate & Submit</button>
-
-    </form>
+    <table class="styled-table">
+      <caption>
+        Monthly User Registrations
+      </caption>
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Sign-ups</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>150</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>220</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>

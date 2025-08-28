@@ -4,52 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Role of AI in Modern Cybersecurity</title>
+
+      <style>
+    table.styled-table {
+      width: 100%;
+      border-collapse: collapse; /* Merges cell borders */
+    }
+    .styled-table th, .styled-table td {
+      border: 1px solid #cccccc;
+      padding: 8px;
+      text-align: left;
+    }
+    .styled-table th {
+      background-color: #f2f2f2;
+    }
+    .styled-table caption {
+      caption-side: bottom;
+      padding-top: 10px;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
- <p>What are your interests?</p>
-  <input type="checkbox" id="interestTech" name="interests" value="technology">
-  <label for="interestTech">Technology</label>
-
-  <input type="checkbox" id="interestArt" name="interests" value="art">
-  <label for="interestArt">Art</label>
-
-  <input type="checkbox" id="interestMusic" name="interests" value="music">
-  <label for="interestMusic">Music</label>
-
-
-
-
-
-
-<label for="country">Country:</label>
-  <select id="country" name="country">
-    <option value="">--Please choose an option--</option>
-    <option value="us">United States</option>
-    <option value="ca">Canada</option>
-    <option value="uk">United Kingdom</option>
-  </select>
-
-
-  <label for="bio">Biography:</label><br>
-  <textarea id="bio" name="bio" rows="5" cols="40" placeholder="Tell us about yourself..."></textarea>
-
-  <button type="submit">Submit Data</button>
-  <button type="reset">Clear Form</button>
-
-
-  <label for="zipcode">Zip Code (5 digits):</label>
-  <input 
-    type="text" 
-    id="zipcode" 
-    name="zipcode" 
-    required 
-    minlength="5" 
-    maxlength="5" 
-    pattern="[0-9]{5}"
-    title="Please enter a 5-digit zip code.">
-  <button type="submit">Validate & Submit</button>
-
-</form>
-
+<!-- A simple 2x2 table -->
+<table class="styled-table">
+    <caption>Monthly User Registrations</caption>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Sign-ups</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>220</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>

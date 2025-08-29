@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 250px;              /* content width */
+            padding: 20px;             /* inside spacing */
+            border: 10px solid #333;   /* border */
+            margin: 20px;              /* outside spacing */
+            box-sizing: border-box;    /* include padding + border in width */
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">CSS Box Model</div>
+</body>
+</html>

@@ -1,44 +1,9 @@
-body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      display: grid;
-      grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-      grid-template-columns: 1fr 3fr;   /* Sidebar 1/4, Main 3/4 */
-      grid-template-rows: auto 1fr auto;
-      gap: 20px; /* space between rows and columns */
-      height: 100vh;
-    }
-
-    header {
-      grid-area: header;
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    aside {
-      grid-area: sidebar;
-      background: #f4f4f4;
-      padding: 20px;
-    }
-
-    main {
-      grid-area: main;
-      background: #fff;
-      padding: 20px;
-    }
-
-    footer {
-      grid-area: footer;
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+<header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>

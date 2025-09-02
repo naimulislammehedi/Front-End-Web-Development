@@ -1,0 +1,41 @@
+/* Default (mobile first) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: block;
+}
+
+nav a {
+  display: block;          /* stack links vertically */
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  background: #444;
+  margin: 4px 0;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  nav {
+    display: flex;         /* arrange links horizontally */
+    justify-content: center;
+    gap: 20px;
+  }
+
+  nav a {
+    display: inline-block;  /* inline links */
+    margin: 0;
+    background: transparent;
+  }
+}

@@ -1,4 +1,20 @@
-let myName = "Gemini";
-for (let i = 0; i < 5; i++) {
-    console.log(myName);
-}
+👩‍🏫 Question for you:
+Create an object called car with these properties:
+
+brand (example: "Toyota")
+
+model (example: "Corolla")
+
+year (example: 2020)
+
+Then:
+
+Print the brand.
+
+Update the year to 2023.
+
+Add a new property called color.
+
+Print the whole object.
+
+👉 Give it a try!
